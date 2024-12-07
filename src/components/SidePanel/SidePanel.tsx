@@ -1,5 +1,5 @@
-import icon from "../assets/img/logo/logo.svg";
-import { Budget } from "../types/interfaces";
+import icon from "../../assets/img/logo/logo.svg";
+import { Budget } from "../../types/interfaces";
 import BudgetList from "./BudgetList";
 
 interface Props {

@@ -1,4 +1,4 @@
-import { Budget } from "../types/interfaces";
+import { Budget } from "../../types/interfaces";
 import BudgetListItem from "./BudgetListItem";
 
 interface Props {

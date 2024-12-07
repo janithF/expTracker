@@ -1,4 +1,4 @@
-import { Budget } from "../types/interfaces";
+import { Budget } from "../../types/interfaces";
 
 interface Props {
   budget: Budget;

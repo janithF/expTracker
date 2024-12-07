@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { Budget } from "../types/interfaces";
 
-const MainContent = () => {
-  return (
-    <div>MainContent</div>
-  )
+interface Props {
+  budget: Budget;
 }
 
-export default MainContent
+const MainContent = ({ budget }: Props) => {
+  return <h2>{budget.title}</h2>;
+};
+
+export default MainContent;

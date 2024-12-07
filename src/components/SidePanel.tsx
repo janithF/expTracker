@@ -1,13 +1,20 @@
-import React from 'react'
-import icon from '../assets/img/icons/icon.svg'
+import icon from "../assets/img/logo/logo.svg";
+import { Budget } from "../types/interfaces";
+import BudgetList from "./BudgetList";
 
-const SidePanel = () => {
-  return (
-    <div id='sidepanel' className='flex flex-col items-center'>
-        <img src={icon} alt="icon" className='w-[250px]'/>
-        <h2>SidePanel</h2>
-    </div>
-  )
+interface Props {
+  budgetList: Budget[];
+  selectedBudget: Budget;
+  onSelectBudget: (budget: Budget) => void;
 }
 
-export default SidePanel
+const SidePanel = ({ budgetList, selectedBudget, onSelectBudget }: Props) => {
+  return (
+    <div id="sidepanel" className="flex flex-col items-center">
+      <img src={icon} alt="icon" className="w-[250px]" />
+      <BudgetList budgetList={budgetList} selectedBudget={selectedBudget} onSelectBudget={onSelectBudget} />
+    </div>
+  );
+};
+
+export default SidePanel;

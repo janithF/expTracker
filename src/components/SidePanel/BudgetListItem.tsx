@@ -11,7 +11,7 @@ const BudgetListItem = ({ budget, selectedBudget, onSelectBudget }: Props) => {
     <div
       id={`budget-${budget.id}`}
       className={`py-2 px-3 border rounded-[10px] mb-3 cursor-pointer ${
-        budget.id == selectedBudget.id ? "bg-secondary text-primary border-x-[5px] border-primary" : "border-gray-200 text-gray"
+        budget.id == selectedBudget.id ? "bg-secondary text-primary border-primary" : "border-gray-200 text-gray"
       }`}
       onClick={() => onSelectBudget(budget)}
     >

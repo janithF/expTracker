@@ -1,4 +1,3 @@
-import { orange } from "@mui/material/colors";
 import { ReactNode } from "react";
 
 interface Props {
@@ -13,27 +12,29 @@ type Color = "green" | "red" | "orange" | "yellow";
 const BudgetSummaryItem = ({ title, icon, amount, color, currency }: Props) => {
   const colorClasses = {
     green: {
-      bg: "bg-green-100",
-      text: "text-green-600",
+      bg: "bg-green-50",
+      text: "text-green-500",
     },
     red: {
-      bg: "bg-red-100",
-      text: "text-red-600",
+      bg: "bg-red-50",
+      text: "text-red-500",
     },
     orange: {
-      bg: "bg-orange-100",
-      text: "text-orange-600",
+      bg: "bg-orange-50",
+      text: "text-orange-500",
     },
     yellow: {
-      bg: "bg-yellow-100",
-      text: "text-yellow-600",
+      bg: "bg-yellow-50",
+      text: "text-yellow-500",
     },
   };
 
   const classes = colorClasses[color];
   return (
     <div className="h-full flex items-center">
-      <div className={`w-[70px] h-[70px] rounded-full ${classes.bg} flex justify-center items-center mr-3`}>
+      <div
+        className={`w-[70px] h-[70px] rounded-full ${classes.bg} flex justify-center items-center mr-3`}
+      >
         <div className={`text-[40px] ${classes.text} font-bold`}>{icon}</div>
       </div>
       <div>

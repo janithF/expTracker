@@ -29,7 +29,19 @@ export interface Expense {
   paymentOptionId: number;
 }
 
+export interface Transaction {
+  id: number;
+  description: string;
+  amount: number;
+  date: Date;
+  paymentOption: PaymentOption | null;
+  type: TransactionType;
+  category?: Category;
+}
+
 export interface Category {
   id: number;
   title: string;
 }
+
+export type TransactionType = 'income' | 'expense';

@@ -1,4 +1,5 @@
 import { createTheme } from "@mui/material/styles";
+import { categoryColors } from "./data/categories";
 
 const theme = createTheme({
   palette: {
@@ -36,21 +37,7 @@ const theme = createTheme({
     },
     // Additional category colors as custom keys
     categories: {
-      utilities: "#4ECDC4",
-      transportation: "#36A2EB",
-      foodAndDining: "#FF7043",
-      housing: "#FF6F61",
-      groceries: "#F7B801",
-      health: "#8BC34A",
-      entertainment: "#AB47BC",
-      personalCare: "#FF8A65",
-      education: "#3F51B5",
-      debtPay: "#EF5350",
-      savings: "#66BB6A",
-      shopping: "#FFCA28",
-      travel: "#FFA726",
-      gifts: "#FFB74D",
-      misc: "#607D8B",
+      ...categoryColors,
     },
   },
   typography: {
@@ -68,4 +55,4 @@ declare module "@mui/material/styles" {
   }
 }
 
-export default theme
+export default theme;

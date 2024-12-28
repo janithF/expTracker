@@ -1,21 +1,21 @@
 import { Category } from "../types/interfaces";
 
 const categoriesList: Category[] = [
-  { id: 1, title: "utilities" },
-  { id: 2, title: "transportation" },
-  { id: 3, title: "foodAndDining" },
-  { id: 4, title: "housing" },
-  { id: 5, title: "groceries" },
-  { id: 6, title: "health" },
-  { id: 7, title: "entertainment" },
-  { id: 8, title: "personalCare" },
-  { id: 9, title: "education" },
-  { id: 10, title: "debtPay" },
-  { id: 11, title: "savings" },
-  { id: 12, title: "shopping" },
-  { id: 13, title: "travel" },
-  { id: 14, title: "gifts" },
-  { id: 15, title: "misc" },
+  { id: 1, slug: "utilities", title: "utilities" },
+  { id: 2, slug: "transportation", title: "transportation" },
+  { id: 3, slug: "foodAndDining", title: "food & dining" },
+  { id: 4, slug: "housing", title: "housing" },
+  { id: 5, slug: "groceries", title: "groceries" },
+  { id: 6, slug: "health", title: "health" },
+  { id: 7, slug: "entertainment", title: "entertainment" },
+  { id: 8, slug: "personalCare", title: "personal care" },
+  { id: 9, slug: "education", title: "education" },
+  { id: 10, slug: "debtPay", title: "debtPay" },
+  { id: 11, slug: "savings", title: "savings" },
+  { id: 12, slug: "shopping", title: "shopping" },
+  { id: 13, slug: "travel", title: "travel" },
+  { id: 14, slug: "gifts", title: "gifts" },
+  { id: 15, slug: "misc", title: "misc" },
 ];
 
 export const categoryColors = {

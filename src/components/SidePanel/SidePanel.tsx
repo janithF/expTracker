@@ -1,4 +1,4 @@
-import icon from "../../assets/img/logo/logo.svg";
+import logo from "../../assets/img/logo/logo-white.svg";
 import { Budget } from "../../types/interfaces";
 import BudgetList from "./BudgetList";
 
@@ -11,7 +11,7 @@ interface Props {
 const SidePanel = ({ budgetList, selectedBudget, onSelectBudget }: Props) => {
   return (
     <div id="sidepanel" className="flex flex-col items-center">
-      <img src={icon} alt="icon" className="w-[250px]" />
+      <img src={logo} alt="icon" className="w-[250px] mt-3" />
       <BudgetList budgetList={budgetList} selectedBudget={selectedBudget} onSelectBudget={onSelectBudget} />
     </div>
   );

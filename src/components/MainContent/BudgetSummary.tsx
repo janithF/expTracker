@@ -14,7 +14,7 @@ const BudgetSummary = () => {
   const balance = totalIncome && totalExpenses ? totalIncome - totalExpenses : 0;
 
   return (
-    <div className="h-[100px] w-full border border-gray-200 rounded-lg py-[5px] px-[30px] flex items-center justify-between">
+    <div className="h-[100px] w-full border border-gray-200 rounded-lg py-[5px] px-[30px] flex items-center justify-between bg-white">
       <BudgetSummaryItem icon={<IoTrendingUp />} amount={totalIncome ?? 0} color="green" currency="LKR" title="Total Income" />
       <Divider orientation="vertical" variant="middle" flexItem />
       <BudgetSummaryItem icon={<FaWallet />} amount={totalExpenses ?? 0} color="red" currency="LKR" title="Total Expenses" />

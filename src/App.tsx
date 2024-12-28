@@ -11,7 +11,7 @@ function App() {
   return (
     <div
       id="expense-tracker"
-      className="flex h-full border bg-background border-gray-200 border-solid rounded-[25px] max-w-screen-2xl mx-auto"
+      className="flex h-full border bg-primary border-gray-200 border-solid rounded-[25px] max-w-screen-2xl mx-auto"
     >
       <div
         id="side-panel-container"
@@ -25,7 +25,7 @@ function App() {
       </div>
       <div
         id="main-container"
-        className="flex-1 rounded-[25px] py-[5px] px-[20px] bg-white"
+        className="flex-1 rounded-[23px] py-[5px] px-[20px] bg-background"
       >
         <BudgetContext.Provider value={selectedBudget}>
           <MainContent/>
